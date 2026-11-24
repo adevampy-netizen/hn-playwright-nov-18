@@ -11,5 +11,6 @@ test('page navigators', async ({page})=>{
     console.log(URL);
     const title = await page.title();
     console.log(title)
+    console.log('######')
     console.log('added 100')
 })
