@@ -13,6 +13,7 @@ test('page navigators', async ({page})=>{
     console.log(title)
     console.log('######')
     console.log('added 100')
+    await page.reload() //added
 })
  
 
