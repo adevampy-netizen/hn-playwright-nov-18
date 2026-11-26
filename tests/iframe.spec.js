@@ -9,7 +9,6 @@ test('Iframes', async({page})=>{
     await frame1.getByTitle('Installation').click()
     await page.waitForTimeout(2000)
     console.log('completed')
-    ...
     
 })
 
