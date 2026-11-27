@@ -20,6 +20,7 @@ test('page navigators', async ({page})=>{
     await page.goForward();
     await page.reload();
     console.log('mmm')
+    console.log('mmm jjj')
 
 
 
