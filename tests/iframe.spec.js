@@ -80,6 +80,22 @@ test('frame handling', async({page})=>{
 
 })
 
+test.only('Nested frame handling', async({page})=>{
+    await page.goto('https://www.hyrtutorials.com/p/frames-practice.html');
+    const frame1 = page.frameLocator('#frm1');
+    // frame1.locator('[id="selectnav1"]').selectOption('')
+    await frame1.locator('#selectnav1').selectOption({label: '-- Core Java'});
+    const frame3_2 = page.frameLocator('#frm3').frameLocator('#frm2');
+    await frame3_2.locator('#firstName').fill('deva');
+    await frame3_2.locator('#lastName').fill('A');
+    await frame3_2.locator('#malerb').check()
+    await frame3_2.locator('#englishchbx').check();
+
+})
+
+
+
+
 
 
 
