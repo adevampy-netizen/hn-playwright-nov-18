@@ -9,7 +9,7 @@ test('Iframes', async({page})=>{
     await frame1.getByTitle('Installation').click()
     await page.waitForTimeout(2000)
     console.log('completed')
-    
+    console.log("removed test only")
 })
 
 test('Iframes2', async({page})=>{  //only fail in chrome
