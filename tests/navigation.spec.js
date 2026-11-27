@@ -5,7 +5,7 @@ test('page navigators', async ({page})=>{
     await page.waitForTimeout(2000);
     await page.goto('https://www.redbus.in/');
     await page.waitForTimeout(2000);
-    const URL = page.url();
+    const URL = await page.url();
     console.log(URL);
     const title = await page.title();
     console.log(title)
@@ -19,8 +19,8 @@ test('page navigators', async ({page})=>{
     await page.goForward();
     await page.goForward();
     await page.reload();
-    console.log('mmm')
-    console.log('mmm jjj')
+    console.log('mmmm')
+    console.log('mmm jjj mm')
 
 
 
