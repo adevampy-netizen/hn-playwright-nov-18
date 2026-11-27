@@ -80,7 +80,7 @@ test('frame handling', async({page})=>{
 
 })
 
-test.only('Nested frame handling', async({page})=>{
+test('Nested frame handling', async({page})=>{
     await page.goto('https://www.hyrtutorials.com/p/frames-practice.html');
     const frame1 = page.frameLocator('#frm1');
     // frame1.locator('[id="selectnav1"]').selectOption('')
@@ -90,6 +90,7 @@ test.only('Nested frame handling', async({page})=>{
     await frame3_2.locator('#lastName').fill('A');
     await frame3_2.locator('#malerb').check()
     await frame3_2.locator('#englishchbx').check();
+    console.log("removed test only")
 
 })
 
