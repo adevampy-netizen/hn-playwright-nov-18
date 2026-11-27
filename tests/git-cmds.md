@@ -91,3 +91,58 @@ Because <input> tags are self-closing (they don't have a closing </input> tag), 
 ******************
 
 
+flaky test 
+----------
+dynamically changing, network issue, ad block/overlapped , unstable environment.
+first preferable resilent playwright inbuilt locators - getby.. then will go for CSS, XPATH.
+
+
+-------------------------------------------------------------------------------------------------------------
+                                ######### API postman #############
+-------------------------------------------------------------------------------------------------------------
+starting stage of APP development--> API
+after full development --> UI ,  API 
+
+
+endpoint
+--------
+url
+
+payload  (post, put)
+------
+inputs like username, pwd, 
+
+Authendication
+--------------
+we need to tell who we are   // access like ID card 
+
+
+Status code
+---------
+
+GET, PUT 200, delete 204 no content
+POST 201 created
+
+
+put - update entire resources.
+patch - update specific fields in a resource.
+
+put VS patch difference 
+
+
+400 - Bad Request
+    "error": "invalid_json",
+    "message": "The request body contains invalid JSON.",
+    "details": "Expected ',' or '}' after property value in JSON at position 29",
+
+401 - unathorized   wrong url,   ### need to tell who we are 
+ "hint": "Send x-api-key for admin calls (/api/*) or Authorization: Bearer <token> for app-user calls (/app/*).",
+
+404 not found
+
+
+
+200 - ok success
+201- created
+204 - no content
+404 -not found
