@@ -10,7 +10,7 @@ test('handling-dropDown', async({page})=>{
 
     await page.locator('[title="Search in"]').selectOption({index: 2})
     
-    await page.pause()
+    
 })
 
 
